@@ -55,7 +55,7 @@ class ItemModal extends Component {
                     isOpen={this.state.modal}
                     toggle={this.toggle}
                 >
-                    <ModalHeader toggle={this.toggle}>Add To Shopping List</ModalHeader>
+                    <ModalHeader toggle={this.toggle}>Type Criteria to Save</ModalHeader>
                     <ModalBody>
                         <Form onSubmit={this.onSubmit}>
                             <FormGroup>
@@ -64,14 +64,14 @@ class ItemModal extends Component {
                                     type="text"
                                     name="name"
                                     id="item"
-                                    placeholder="Add shopping item"
+                                    placeholder="Enter Criteria Here!"
                                     onChange={this.onChange}
                                 />
                                 <Button
                                     color="dark"
                                     style={{marginTop: '2rem'}}
                                     block
-                                >Add Item</Button>
+                                >Enter to Save</Button>
                             </FormGroup>
                         </Form>
                     </ModalBody>
